@@ -43,10 +43,59 @@
   </head>
 
   <body>
-    <header id="header"></header>
+    <header id="header position-sticky sticky-top">
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-info d-lg-flex justify-content-between"
+      >
+        <div class="logo">
+          <!-- <img class="logo-img" src="./src/image/logo.png" /> -->
+          <a class="navbar-brand text-white" href="#">Linkedin</a>
+        </div>
+
+        <!-- Mobile Menu Button Start -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Mobile Menu Button End -->
+
+        <div
+          class="collapse navbar-collapse d-lg-flex justify-content-lg-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item px-3 active">
+              <a class="nav-link nav-item-hover text-white" href="./index.html"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link nav-item-hover text-white" href="#">Blog</a>
+            </li>
+            <li class="nav-item px-3">
+              <button
+                type="button"
+                class="btn btn-outline-light"
+                data-toggle="modal"
+                data-target="#registerModal"
+              >
+                Register
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
     <main>
-      <section id="home-info" class="container">
+      <section id="home-dark" class="container bg-danger">
         <div class="jumbotron mt-5 text-center bg-transparent">
           <h1 class="display-4 font-weight-bold">Posts</h1>
 
@@ -92,14 +141,61 @@
           </div>
         </div> -->
       </section>
+      <section id="detail-content" class="container bg-danger m-5 d-none">
+        <button id="goBackButton">Geri qayit</button>
+      </section>
     </main>
 
     <footer>
       <div class="jumbotron jumbotron-fluid m-0 bg-info text-white">
         <div class="container">
-          <div
-            class="d-flex flex-lg-row flex-column justify-content-between"
-          ></div>
+          <div class="d-flex flex-lg-row flex-column justify-content-between">
+            <h1 class="h4 font-weight-light mb-sm-5">Travolic</h1>
+            <div class="d-lg-flex">
+              <ul class="list-group list-group-flush mx-5">
+                <li class="list-group-item bg-transparent border-light">
+                  Contact
+                </li>
+                <li class="list-group-item bg-transparent border-light">
+                  A second item
+                </li>
+                <li class="list-group-item bg-transparent border-light">
+                  A third item
+                </li>
+                <li class="list-group-item bg-transparent border-light">
+                  And a fifth one
+                </li>
+              </ul>
+              <ul class="list-group list-group-flush mx-5">
+                <li class="list-group-item bg-transparent border-light">
+                  Contact
+                </li>
+                <li class="list-group-item bg-transparent border-light">
+                  A second item
+                </li>
+                <li class="list-group-item bg-transparent border-light">
+                  A third item
+                </li>
+                <li class="list-group-item bg-transparent border-light">
+                  And a fifth one
+                </li>
+              </ul>
+              <ul class="list-group list-group-flush mx-5">
+                <li class="list-group-item bg-transparent border-light">
+                  Contact
+                </li>
+                <li class="list-group-item bg-transparent border-light">
+                  A second item
+                </li>
+                <li class="list-group-item bg-transparent border-light">
+                  A third item
+                </li>
+                <li class="list-group-item bg-transparent border-light">
+                  And a fifth one
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
